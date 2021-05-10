@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav
@@ -52,7 +53,7 @@ nav
     color: #212353;
     border-radius: 25px;
     font-weight: bold;
-    padding: 15px 40px 15px 20px;
+    padding: 15px 35px 15px 20px;
     box-shadow: 1px 4px 8px #0003;
     transition: all .2s ;
     z-index: 1;
@@ -78,6 +79,27 @@ nav
     z-index: 0;
 }
 
+#check
+{
+    position: absolute;
+    display: none;
+    
+}
+
+.icon-btn-menu
+{
+   font-size: 30pt;
+   cursor: pointer;
+   z-index: 10000;
+}
+
+.checkbtn
+{
+    position: absolute;
+    display: none;
+    z-index: 10000;
+}
+
 @media screen and (max-width:1024px) {
         .menu
         {
@@ -85,29 +107,66 @@ nav
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        nav
-        {
-            position: absolute;
-            left: 18em;
             
         }
-        .menu nav li, .menu nav li.active a
+        
+        nav
         {
-            font-size: 23pt;
+            
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: baseline;
+            width: 200px;
+            height: 400px;
+            top: 9%;
+            left: 79%;
+            background-color: white;
+            box-shadow: 1px 1px 10px #0002;
+            z-index: 45;
+            
+        }
+        .menu nav li
+        {
+            display: block;
+            line-height: 70px;
+            font-size: 25pt;
+        }
+        .menu nav li.active a
+        {
+            font-size: 25pt;
+        }
+        .pontos
+        {
+            display: none;
         }
         .btn-login
         {
-            position: relative;
-            left: 80px ;
-            font-size: 20pt;
-            padding: 18px 40px 18px 20px;
+            display: none;
+            position: absolute;
+            top: 43%;
+            left: 82%;
+            z-index: 46;
         }
-        .svg-inline--fa 
+        .btn-login:hover
         {
-            width: 23px;
+            padding: 15px 35px 15px 20px;
+        }
+        .checkbtn
+        {
+            display: block;
+            position: absolute;
+            left: 95%;
         }
 
+        #check:checked ~ nav
+        {
+            display: flex;
+        }
+        #check:checked ~ .btn-login
+        {
+            display: flex;
+        }
 }
 
 /* Fim do cabeçalho */
@@ -117,5 +176,38 @@ section.One
 {
     width: 100%;
     height: 100vh;
+
+    
 }
 
+section.One div.texts
+{
+    width: 900px;
+    height: 500px;
+    margin-left: 250px;
+    margin-top: 100px;
+    padding-left: 30px;
+}
+
+section.One div.texts h1
+{
+    font-size: 50pt;
+    color: #212353;
+    margin-bottom: 38px;
+}
+
+section.One div.texts p
+{
+    line-height: 28px;
+    color: #4B5D68;
+    z-index: 5;
+}
+
+section.One img.Ola
+{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+    pointer-events: none;
+}

@@ -8,7 +8,11 @@ export default function Header(){
     return(
         <>
             <header className='menu-main'>
-                <div className='menu'>
+                <div className='menu'> 
+                    <input type="checkbox"  id="check" ></input>
+                    <label for="check" class="checkbtn">
+                        <p className='icon-btn-menu'>&#8801;</p>
+                    </label>  
                     <img src={Icon} className='img-logo' style={{pointerEvents:'none'}}/>
                     <nav className='nav-menu'>
                         <ul>
