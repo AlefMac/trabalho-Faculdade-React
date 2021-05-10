@@ -1,0 +1,112 @@
+.menu-main
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+   
+}
+.menu
+{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav
+{
+    position: absolute;
+    left: 25em;
+    
+}
+
+.menu nav li 
+{
+    display: inline-block;
+    padding-left: 30px;
+    
+}
+
+.menu nav li a
+{
+    color: #4B5D68;
+    transition: .2s;
+}
+
+.menu nav li.active a
+{
+    color: #212353;
+    font-size: 13pt;
+}
+
+.menu nav li a:hover
+{
+    color: #212353;
+    
+}
+
+.btn-login
+{
+    background-color: #ffffff;
+    color: #212353;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 15px 40px 15px 20px;
+    box-shadow: 1px 4px 8px #0003;
+    transition: all .2s ;
+    z-index: 1;
+}
+
+.btn-login:hover
+{
+    padding: 17px 40px 17px 25px;
+}
+
+.svg-inline--fa 
+{
+    width: 18px;
+    margin-left: 30px;
+    
+}
+
+.pontos
+{
+    position: absolute;
+    top:0;
+    left: 86%;
+    z-index: 0;
+}
+
+@media screen and (max-width:1024px) {
+        .menu
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav
+        {
+            position: absolute;
+            left: 18em;
+            
+        }
+        .menu nav li, .menu nav li.active a
+        {
+            font-size: 23pt;
+        }
+        .btn-login
+        {
+            position: relative;
+            left: 80px ;
+            font-size: 20pt;
+            padding: 18px 40px 18px 20px;
+        }
+        .svg-inline--fa 
+        {
+            width: 23px;
+        }
+
+}
+
