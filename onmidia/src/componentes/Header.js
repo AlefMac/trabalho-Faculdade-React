@@ -9,7 +9,7 @@ export default function Header(){
         <>
             <header className='menu-main'>
                 <div className='menu'>
-                    <img src={Icon} className='img-logo'/>
+                    <img src={Icon} className='img-logo' style={{pointerEvents:'none'}}/>
                     <nav className='nav-menu'>
                         <ul>
                             <li className='active'><a href='#'>Inicio</a></li>
