@@ -53,15 +53,16 @@ nav
     color: #212353;
     border-radius: 25px;
     font-weight: bold;
-    padding: 15px 35px 15px 20px;
+    padding: 15px 20px 15px 20px;
     box-shadow: 1px 4px 8px #0003;
     transition: all .2s ;
     z-index: 1;
+    margin-right: 15px;
 }
 
 .btn-login:hover
 {
-    padding: 17px 40px 17px 25px;
+    padding: 17px 25px 17px 25px;
 }
 
 .svg-inline--fa 
@@ -150,7 +151,7 @@ nav
         }
         .btn-login:hover
         {
-            padding: 15px 35px 15px 20px;
+            padding: 15px 20px 15px 20px;
         }
         .checkbtn
         {
