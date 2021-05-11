@@ -101,27 +101,35 @@ nav
     z-index: 10000;
 }
 
+
 @media screen and (max-width:1024px) {
+        
+        .menu-main
+        {
+            display: block;
+            width: 100%;
+        }
+
         .menu
         {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+            border: 1px solid;
         }
         
         nav
         {
             
             position: absolute;
-            display: none;
+            display: flex;
             justify-content: center;
             align-items: baseline;
             width: 200px;
             height: 400px;
             top: 9%;
-            left: 79%;
+            left: 60%;
             background-color: white;
             box-shadow: 1px 1px 10px #0002;
             z-index: 45;
@@ -146,7 +154,7 @@ nav
             display: none;
             position: absolute;
             top: 43%;
-            left: 82%;
+            left: 60%;
             z-index: 46;
         }
         .btn-login:hover
@@ -157,7 +165,7 @@ nav
         {
             display: block;
             position: absolute;
-            left: 95%;
+            left: 80%;
         }
 
         #check:checked ~ nav
@@ -202,6 +210,20 @@ section.One div.texts p
     line-height: 28px;
     color: #4B5D68;
     z-index: 5;
+    margin-bottom: 40px;
+}
+
+a.cadastrar
+{
+    color:white;
+    background-color: #7854F7;
+    padding: 15px 20px 15px 20px;
+    border-radius: 8px;
+}
+
+a.cadastrar:hover
+{
+    box-shadow: 1px 1px 18px #7854F7;
 }
 
 section.One img.Ola
@@ -211,4 +233,27 @@ section.One img.Ola
     left: 60%;
     z-index: 0;
     pointer-events: none;
+}
+
+@media screen and (max-width:1024px)
+{
+    .main-section
+    {
+        width: 100%;
+        border: 1px solid;
+        overflow: hidden;
+        
+    }
+    section.One div.texts
+    {
+        position: relative;
+        margin-left: 0;
+        z-index: 5;
+    }
+    section.One img.Ola
+    {
+        left: 40%;
+        z-index: 3;
+        width: 300px;
+    }
 }
