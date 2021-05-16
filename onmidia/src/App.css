@@ -524,7 +524,6 @@ img.ponto-rosa
 {
     width: 100%;
     display: flex;
-    object-fit: cover;
     justify-content: center;
     pointer-events: none;
 }
