@@ -152,7 +152,7 @@ nav
         {
             display: none;
             position: absolute;
-            top: 32%;
+            top: 30%;
             left: 82.9%;
             z-index: 46;
         }
@@ -267,11 +267,13 @@ section.One
 
 section.One div.texts
 {
-    width: 900px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
     margin-left: 250px;
     margin-top: 100px;
     padding-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 section.One div.texts h1
@@ -293,7 +295,11 @@ a.cadastrar
 {
     color:white;
     background-color: #7854F7;
-    padding: 15px 20px 15px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
     border-radius: 8px;
 }
 
@@ -304,9 +310,8 @@ a.cadastrar:hover
 
 section.One img.Ola
 {
-    position: relative;
-    top: 20%;
-    left: 60%;
+    position: absolute;
+    left: 900px;
     z-index: 0;
     pointer-events: none;
 }
@@ -316,7 +321,6 @@ section.One img.Ola
     .main-section
     {
         width: 100%;
-        border: 1px solid;
         overflow: hidden;
         
     }
@@ -332,4 +336,179 @@ section.One img.Ola
         z-index: 3;
         width: 300px;
     }
+}
+
+/*Fim da section One */ 
+
+/* Início da section Two */
+
+
+section.two
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+section.two div.menu-works
+{
+    width: 95%;
+    height: 80%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+    overflow: hidden;
+    z-index: 5;
+}
+section.two div.menu-works h2
+{
+    color: #212353;
+    font-size: 45px;
+    position: absolute;
+    z-index: 5;
+}
+section.two div.box
+{
+   
+    width: 390px;
+    height: 600px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 5;
+    
+}
+section.two div.box p
+{   
+    position: absolute;
+    margin-top: 450px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    color: #99AAB5;
+    z-index: 5;
+}
+
+section.two div.box h3
+{
+    color: #272D4E;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 390px;
+    z-index: 5;
+}
+
+div.box-interative
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-top: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 5;
+    
+}
+
+div#whats
+{
+    background-color: #00DA9F;
+    
+}
+div#books
+{
+    background-color: #7953F7;
+}
+div#house
+{
+    background-color: #F063B8;
+}
+
+img.ponto-verde
+{
+    position: relative;
+    left: 75px;
+    top: 35px;
+    z-index: 1;
+    pointer-events: none;
+    width: 250px;
+    height: 370px;
+}
+
+img.ponto-azul
+{
+    position: relative;
+    top: 113px;
+    left: 73px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+img.ponto-rosa
+{
+    position: relative;
+    top:48px;
+    left: 78px;
+    z-index: 1;
+    pointer-events: none;
+    width: 250px;
+    height: 350px;
+}
+
+@media screen and (max-width: 1080px) {
+    section.two
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        z-index: 5;
+    }
+    section.two div.menu-works{
+        display:inline-block;
+        width: 50%;
+        
+    }
+    section.two div.box{
+        margin: 0;
+        padding: 0;
+        
+    }
+    section.two div.box p{
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width:400px) {
+    section.two{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 38% 0 0 0;
+    }
+    section.two div.menu-works{
+        
+        padding: 0;
+        width: 100%;
+        
+        
+    }
+
+    div.box{
+        margin-top: 15px;
+        padding: 0;
+        width: 0;
+        
+    }
+
 }
