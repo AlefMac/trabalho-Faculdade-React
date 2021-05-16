@@ -29,14 +29,14 @@ export default function sectionTwo(){
                             <div className="box-interative" id="books"><img src={Iconsbook} /></div>
                             <h3>Conteúdo Didático</h3>
                             <p>Vasto acesso a material interativo de livros,<br/> áudios, vídeos e muito mais. Esse<br/> conteúdo será enviado
-                                pelo número de<br/> <strong>WhatsApp</strong> cadastrado</p>
+                                pelo número de<br/> <strong>WhatsApp</strong> cadastrado.</p>
                             <img src={ImgsPontoRoxo} style={{width: '120px', height:'257px'}} className="ponto-azul"/>
                         </div>
                         
                         <div className="box">
                             <div className="box-interative" id="house"><img src={IconsHouse} /></div>
                             <h3>Bem-Estar</h3>
-                            <p>Aproximando mais o hábito da leitura e<br/> estudos em casa, por meio dos pais ou<br/> responsáveis</p>
+                            <p>Aproximando mais o hábito da leitura e<br/> estudos em casa, por meio dos pais ou<br/> responsáveis.</p>
                             <img src={ImgsPontoRosa} className="ponto-rosa"/>
                         </div>
                     </div>
